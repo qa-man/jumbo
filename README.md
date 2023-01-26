@@ -13,10 +13,10 @@
 8. Copy Android Platform-Tools to default folder (usually it's "C:\Users\{username}\AppData\Local\Android\Sdk") and add/check Environment Variables '**ANDROID_HOME**' (as mentioned folder "C:\Users\{username}\AppData\Local\Android\Sdk")
 9. Add/check Environment Variable '**adb**' (usually it's "C:\Users\{username}\AppData\Local\Android\Sdk\platform-tools\adb.exe")
 10. Add/check Environment Variable '**Path**' ("C:\Users\{username}\AppData\Local\Android\Sdk\platform-tools", "C:\Program Files\nodejs\", "C:\Users\{username}\AppData\Roaming\npm" )
-11. Connect Android device with swithed ON and authorized 'USB debugging' in 'Developer options' device settings. Install Jumbo app on the Android Device.
+11. Connect Android device with switched ON and authorized 'USB debugging' in 'Developer options' device settings. Install Jumbo app on the Android Device.
 
 [Tests run through IDE] Please use **'jumbo.runsettings'** for run tests through IDE (e.g. in 'Visual Studio': menu "Test" -> "Configure Run Settings" -> "Select Solution Wide runsettings File" and select "jumbo.runsettings" which is located in project folder.
 Then please run tests through 'Test Explorer' ('Visual Studio': menu "Test" -> "Test Explorer")
 
-[Tests run through console] Please specify **'jumbo.runsettings'** for run tests using console (restore nuget packages and build solition before it):
+[Tests run through console] Please specify **'jumbo.runsettings'** for run tests using console (restore nuget packages and build solution before it):
 In console: navigate to folder with artifacts after build (e.g. ...\JumboMobileTests\bin\Debug\net7.0>) then use command for run: "vstest.console.exe JumboMobileTests.dll /Settings:"jumbo.runsettings"
