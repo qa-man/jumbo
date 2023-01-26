@@ -23,21 +23,12 @@ In console: navigate to folder with artifacts after build (e.g. ...\JumboMobileT
 
 Test Automation Solution Description:
 Framework based on/use: .NET 7 (C#), Specflow (for BDD/Gherkin usage), Appium (for Android device/app interaction), NUnit (for tests)
-
 It has several layers: Features/tests, Business objects (App Screens, business logic aka step definitions), Utilities/Helpers.
-
 Test run use jumbo.runsettings (sensitive parameters values which should be written during run through CI pipeline, it leaved by default for local/manual run)
-
 jumbo.config has some kind of constant app values - android app package id and app activity id
-
 Each test scenario tried to be independent (does not depend on run order - in scope of several/all or as a single)
-
 It'd be great to have access to API for some pre/post conditions - in that case tests runs would be much safier/clear - in case of something would went wrong with data during previous runs
-
 Scenarious detailed described in Gherkin language and imitates each user action/behavior with the app
-
 During TAF development I tried to follow principles: SOLID, KISS, YAGNI, DRY, AAA
-
 Several design pattern used: Page Object, Singleton, Factory Method, Strategy, Facade, Wrapper, Builder...
-
 In case of any questions please feel free to email me (andrei.shendrykau@gmail.com)
