@@ -1,0 +1,4 @@
+{
+  "AndroidPackage": "com.icemobile.jumboclient",
+  "AndroidActivity": "com.jumbo.startup.MainActivity"
+}
