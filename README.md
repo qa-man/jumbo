@@ -23,6 +23,7 @@ In console: navigate to folder with artifacts after build (e.g. ...\JumboMobileT
 
 
 Test Automation Solution Description:
+It's been taken +/- 2.5 days for TAF creation (some places can be improved).
 Framework based on/use: .NET 7 (C#), Specflow (for BDD/Gherkin usage), Appium (for Android device/app interaction), NUnit (for tests). It has several layers: Features/tests, Business objects (App Screens, business logic aka step definitions), Utilities/Helpers.
 
 Test run use jumbo.runsettings (sensitive parameters values which should be written during run through CI pipeline, it leaved by default for local/manual run)
